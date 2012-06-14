@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project Dreams</title>
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "application" %>
+    <link href='http://fonts.googleapis.com/css?family=Asap' rel='stylesheet' type='text/css'>
+    <%= csrf_meta_tag %>
+  </head>
+  <body>
+    <div id="mbg">&nbsp;</div>
+    <div id="container">
+    <div id="header">
+      <h1 class="title">
+          <%= link_to "Your Site Name", :root %>
+      </h1>
+      <div id="about">
+        <p class="descript">
+          By <%= link_to "Your Name", page_path(5) %>
+        </p>
+        <br/>
+      </div>
+      <!--<ul id="navigation">
+          <li><%= link_to_unless_current "Blog", posts_path %></li>
+          <% Page.all.each do |page| %>
+            <li><%= link_to_unless_current page.name, page %></li>
+          <% end %> -->
+        </ul>
+        <div id="picture">
+        <img src="https://your-logo.jpg" class="snap">
+        </div>
+    </div>
+      <%= yield %>
+    </div>
+  </body>
+</html>

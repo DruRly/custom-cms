@@ -1,0 +1,7 @@
+<div class="content">
+  <% @posts.each do |post| %>
+    <h1><%= raw (link_to post.title, post) %></h1>
+    <div class="post-body"><p><%= raw post.body %></p></div>
+    <br/>
+  <% end %>
+</div>

@@ -1,0 +1,16 @@
+
+
+<div class="content">
+  <h1>
+    <div id="post_title" class="mercury-region" data-type="editable">
+      <%= raw @post.title %>
+    </div>
+  </h1>
+  <div id= "post_body" class="mercury-region" data-type="editable">
+    <%= raw @post.body %>
+  </div>
+  <% if Rails.env.development? %>
+  <p><%= link_to "Edit Post", "/editor" + request.path, id: "edit_link", data: {save_url: mercury_update_post_path(@post) } %></p>
+  <p><%= button_to "Delete Post", @post,  :method => :delete %></p>
+  <% end %>
+</div>

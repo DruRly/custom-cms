@@ -1,0 +1,65 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#header {
+  position: relative;
+  width: 350px;
+  .descript {
+    /* font-size: 15px; */
+    color: white;
+    letter-spacing: 0.5px;
+    text-shadow: 2px 2px #2F2F4F;
+    width: 290px;
+    text-align: justify;
+
+    a:link {
+      color: #C1CDCD;
+    }
+  }
+
+  .title {
+  color: white;
+  text-shadow: 2px 2px #2F2F4F;
+  }
+  h1 {
+    color: #000;
+    font-size: 34px;
+    margin: 0;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 16px;
+    letter-spacing: 2px;
+  }
+
+  #navigation {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding-left: 30px;
+    margin-top: -22px;
+
+
+    li {
+      display: inline;
+      margin: 0;
+      padding-right: 30px;
+      color: #C1CDCD;
+
+      a {
+        text-decoration: none;
+        color: #C1CDCD;
+      }
+    }
+  }
+}
+
+.content {
+  margin: 60px 30px;
+  width: 520px;
+  text-align: justify;
+
+}
+
+.content a {
+  color: #104E8B;
+}

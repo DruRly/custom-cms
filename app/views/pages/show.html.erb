@@ -1,0 +1,17 @@
+
+
+<div class="content">
+  <h1>
+    <div id="page_name" class="mercury-region" data-type="editable">
+      <%= raw @page.name %>
+    </div>
+  </h1>
+  <div id= "page_content" class="mercury-region" data-type="editable">
+    <%= raw @page.content %>
+  </div>
+  <% if Rails.env.development? %>
+  <p><%= link_to "Edit Page", "/editor" + request.path, id: "edit_link", data: {save_url: mercury_update_page_path(@page) } %>
+  </p>
+  <% end %>
+
+</div>
